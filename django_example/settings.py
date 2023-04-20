@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['ec2-3-141-97-78.us-east-2.compute.amazonaws.com',
                  'ec2-18-116-237-85.us-east-2.compute.amazonaws.com',
+                 '127.0.0.1',
                  ]
 
 
@@ -47,6 +48,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'rest_auth.registration',
 ]
 
 MIDDLEWARE = [
@@ -136,6 +138,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #new 
 SITE_ID = 1
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 AUTHENTICATION_BACKENDS = [
 
     # Needed to login by username in Django admin, regardless of `allauth`
