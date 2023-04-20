@@ -16,5 +16,5 @@ EXPOSE 3000
 COPY script.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/script.sh
 #CMD ["/usr/local/bin/script.sh"]
-CMD ["python3","manage.py","runserver","0.0.0.0:3000"]
-#CMD ["/var/mydjango/script.sh"]
+#CMD ["python3","manage.py","runserver","0.0.0.0:3000"]
+CMD ["/var/mydjango/script.sh"]
