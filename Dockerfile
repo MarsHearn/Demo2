@@ -15,4 +15,4 @@ EXPOSE 3000
 #设置容器执行后自动执行的命令
 
 #CMD ["python3","manage.py","runserver","0.0.0.0:3000"]
-CMD ["script.sh"]
+CMD ["/var/mydjango/script.sh"]
